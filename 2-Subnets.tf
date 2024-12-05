@@ -361,7 +361,7 @@ resource "aws_subnet" "california-a-public" {
   }
 }
 
-resource "aws_subnet" "california-b-public" {
+resource "aws_subnet" "california-c-public" {
   vpc_id                  = aws_vpc.california.id
   cidr_block              = "10.46.2.0/24"
   availability_zone       = "us-west-1c"
@@ -369,7 +369,7 @@ resource "aws_subnet" "california-b-public" {
   provider = aws.california 
 
   tags = {
-    Name    = "california-b-public"
+    Name    = "california-c-public"
     Service = "armageddon"
     Owner   = "camorri"
   }
@@ -390,14 +390,14 @@ resource "aws_subnet" "california-a-private" {
   }
 }
 
-resource "aws_subnet" "california-b-private" {
+resource "aws_subnet" "california-c-private" {
   vpc_id            = aws_vpc.california.id
   cidr_block        = "10.46.12.0/24"
   availability_zone = "us-west-1c"
   provider = aws.california
 
   tags = {
-    Name    = "california-b-private"
+    Name    = "california-c-private"
     Service = "armageddon"
     Owner   = "camorri"
   }

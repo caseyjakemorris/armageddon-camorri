@@ -161,10 +161,10 @@ Notes:
       Subnet:
         Private: 
           california-a-private: 10.46.11.0/24
-          california-b-private: 10.46.12.0/24
+          california-c-private: 10.46.12.0/24
         Public:
           california-a-public: 10.46.1.0/24
-          california-b-public: 10.46.2.0/24
+          california-c-public: 10.46.2.0/24
 
   Needs Cross-Region Load Balancer:
 

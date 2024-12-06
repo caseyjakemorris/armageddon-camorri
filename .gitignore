@@ -3,4 +3,5 @@
 *.tfstate.backup
 *.tfplan
 *.terraform
+*.pem
 ```

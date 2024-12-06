@@ -358,7 +358,7 @@ resource "aws_launch_template" "hong-kong_LT" {
   provider = aws.hong-kong
   name_prefix   = "hong-kong_LT"
   image_id      = "ami-06f707739f2271995"  
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 
   key_name = "Hong-Kong-MyLinuxBox"
 

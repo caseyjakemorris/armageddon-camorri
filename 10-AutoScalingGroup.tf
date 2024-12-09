@@ -84,8 +84,8 @@ resource "aws_autoscaling_group" "new-york_asg" {
   max_size              = 3
   desired_capacity      = 1
   vpc_zone_identifier   = [
-    aws_subnet.new-york-a-private.id,
-    aws_subnet.new-york-b-private.id,
+    aws_subnet.new-york-a-public.id,
+    aws_subnet.new-york-b-public.id,
   ]
   health_check_type          = "ELB"
   health_check_grace_period  = 300
@@ -240,8 +240,8 @@ resource "aws_autoscaling_group" "sao-paulo_asg" {
   max_size              = 3
   desired_capacity      = 1
   vpc_zone_identifier   = [
-    aws_subnet.sao-paulo-a-private.id,
-    aws_subnet.sao-paulo-c-private.id,
+    aws_subnet.sao-paulo-a-public.id,
+    aws_subnet.sao-paulo-c-public.id,
   ]
   health_check_type          = "ELB"
   health_check_grace_period  = 300
@@ -318,8 +318,8 @@ resource "aws_autoscaling_group" "australia_asg" {
   max_size              = 3
   desired_capacity      = 1
   vpc_zone_identifier   = [
-    aws_subnet.australia-a-private.id,
-    aws_subnet.australia-b-private.id,
+    aws_subnet.australia-a-public.id,
+    aws_subnet.australia-b-public.id,
   ]
   health_check_type          = "ELB"
   health_check_grace_period  = 300
@@ -396,8 +396,8 @@ resource "aws_autoscaling_group" "hong-kong_asg" {
   max_size              = 3
   desired_capacity      = 1
   vpc_zone_identifier   = [
-    aws_subnet.hong-kong-a-private.id,
-    aws_subnet.hong-kong-b-private.id,
+    aws_subnet.hong-kong-a-public.id,
+    aws_subnet.hong-kong-b-public.id,
   ]
   health_check_type          = "ELB"
   health_check_grace_period  = 300
@@ -474,8 +474,8 @@ resource "aws_autoscaling_group" "california_asg" {
   max_size              = 3
   desired_capacity      = 1
   vpc_zone_identifier   = [
-    aws_subnet.california-a-private.id,
-    aws_subnet.california-c-private.id,
+    aws_subnet.california-a-public.id,
+    aws_subnet.california-c-public.id,
   ]
   health_check_type          = "ELB"
   health_check_grace_period  = 300

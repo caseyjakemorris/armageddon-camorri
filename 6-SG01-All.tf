@@ -88,6 +88,14 @@ resource "aws_security_group" "new-york-SG01-ASG01" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -113,6 +121,14 @@ resource "aws_security_group" "new-york-SG02-LB01" {
     description = ""
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -147,6 +163,14 @@ resource "aws_security_group" "london-SG01-ASG01" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -172,6 +196,14 @@ resource "aws_security_group" "london-SG02-LB01" {
     description = ""
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -206,6 +238,14 @@ resource "aws_security_group" "sao-paulo-SG01-ASG01" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -231,6 +271,14 @@ resource "aws_security_group" "sao-paulo-SG02-LB01" {
     description = ""
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -265,6 +313,14 @@ resource "aws_security_group" "australia-SG01-ASG01" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -290,6 +346,14 @@ resource "aws_security_group" "australia-SG02-LB01" {
     description = ""
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -324,6 +388,14 @@ resource "aws_security_group" "hong-kong-SG01-ASG01" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -349,6 +421,14 @@ resource "aws_security_group" "hong-kong-SG02-LB01" {
     description = ""
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -383,6 +463,14 @@ resource "aws_security_group" "california-SG01-ASG01" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -408,6 +496,14 @@ resource "aws_security_group" "california-SG02-LB01" {
     description = ""
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -441,6 +537,14 @@ resource "aws_security_group" "tokyo-test-SG01-ASG01" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -466,6 +570,14 @@ resource "aws_security_group" "tokyo-test-SG02-LB01" {
     description = ""
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = ""
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
